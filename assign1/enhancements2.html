@@ -1,0 +1,75 @@
+<!-- enhancements page of cellphone manufacturer company -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Get to know the best mobile phone in the market" />
+  <meta name="keywords" content="cellphone, buy, cheap, awesome" />
+  <meta name="author" content="Sergio Alvarado"  />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>RANDOM Enhancements</title>
+  <link rel="stylesheet" href="styles/style.css" media="(min-width:701px)">
+  <link href="styles/mobile_device.css" rel="stylesheet" media="(max-width:700px)">
+  <link rel="stylesheet" href="styles/webfontkit/stylesheet.css">
+</head>
+<body id="home">
+  <header>
+    <p id="profile" > <a href="about.html"><img src="img/profile.png" alt="profile icon"></a></p>
+    <p id="country"><img src="img/australia.png" alt="australia flag"></p>
+
+  </header>
+  <nav>
+    <p><a href="product.html">Product</a></p>
+    <p><a href="about.html">About</a></p>
+    <p><a id="index" href="index.html">RANDOM</a></p>
+    <p><a href="enhancements.html">Enhance</a></p>
+    <p><a href="enhancements2.html">Enhance2</a></p>
+  </nav>
+
+  <article class="fullpage">
+    <br>
+    <h1>Enhancements 2:</h1>
+    <ul>
+      <li>
+        On payment.html, I implemented a timer so that the user only has a limited
+        time to complete the payment after which a warning is displayed / then
+        the browser redirects to the home page.<br><br>
+        Implementation:<br>
+        Code recovered from: <a href="https://www.w3schools.com/howto/howto_js_countdown.asp">w3schools.com</a><br>
+        var future = new Date(new Date().getTime() + 5 * 60000).getTime();<br>
+        var x = setInterval(function() {<br>
+          var now = new Date().getTime();<br>
+          var distance = future - now;<br>
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));<br>
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);<br>
+          document.getElementById("time").innerHTML = minutes + "m " + seconds + "s ";<br>
+          if (distance &lt; 0) {<br>
+            clearInterval(x);<br>
+            document.getElementById("time").innerHTML = "TIME EXPIRED, returning to home page";<br>
+            setTimeout(location.replace("index.html"), 5000);<br>
+          }<br>
+        }, 1000);
+<br><br>
+        This can be best seen in <a href="payment.html">payment page</a> at the bottom. <br><br><hr>
+      </li>
+      <li>
+        On payment.html, I pre-loaded the Name on Credit Card as a concatenation
+        of the firstname and lastname, into the input field, but still enable
+        the user to change the value.<br><br>
+        Implementation:<br>
+        function putName(){<br>
+          var name = document.getElementById("name");<br>
+          name.value = sessionStorage.getItem('first-name') + " " + sessionStorage.getItem('last-name');<br>
+        }<br>
+        This can be seen in <a href="enquire.html">payment page after filling the enquire page</a>.<br>
+      </li>
+    </ul>
+  </article>
+  <footer>
+    <div id="leftfoot"><p>Developed by: Sergio Omar Alvarado Perez</p> </div>
+    <div id="middlefoot"><h3>&copy;RANDOM</h3></div>
+    <div id="rightfoot"><br> <img src="img/australia.png" alt="australia flag"> <a href="about.html">About</a> <a href="product.html">Offers</a> </div>
+  </footer>
+
+</body>
+</html>

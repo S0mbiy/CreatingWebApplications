@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Demonstrates some basic HTML form elements" />
+  <meta name="keywords" content="HTML, Form, tags" />
+  <meta name="author" content="Sergio Alvarado"  />
+  <title>CWA Help Desk Appointment</title>
+</head>
+<body>
+<a href="http://www.swin.edu.au/"><img src="logo.png" alt="Swinburne Logo"></a>
+<h1>CWA Help Desk Appointment</h1>
+<p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+<p>Check Blackboard for when CWA tutors will be there.</p>
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+	<!--Note we have to use a special escape character to print an apostrophe on the Web page -->
+  <fieldset>
+    <legend>Student details</legend>
+    <p><label for="student">Student ID</label> <input type="text" name="student" id="student" required="required" pattern="\d{7,10}"></p>
+    <p><label for="givenName">Given Name</label> <input type="text" name="givenName" id="givenName" pattern="[a-zA-Z]+" maxlength="15"></p>
+    <p><label for="familyName">Family Name</label> <input type="text" name="familyName" id="familyName" pattern="[a-zA-Z]+" maxlength="15"></p>
+  </fieldset>
+  <fieldset>
+    <legend>Your unit</legend>
+    <p>
+      <label><input type="radio" name="unit" value="COS10011" required="required">COS10011</label>
+      <label><input type="radio" name="unit" value="COS60004">COS60004</label>
+      <label><input type="radio" name="unit" value="COS60007">COS60007</label>
+    </p>
+    <select name="tutor" id="tutor" required>
+      <option value="">Please Select</option>
+      <option value="Indiana Jones">Indiana Jones</option>
+      <option value="Bruce Wayne">Bruce Wayne</option>
+      <option value="Mary Poppins">Mary Poppins</option>
+    </select>
+  </fieldset>
+  <fieldset>
+    <legend>Issue</legend>
+    <p>
+      <label>HTML<input type="checkbox" name="issues[]" value="HTML" checked></label>
+      <label>CSS<input type="checkbox" name="issues[]" value="CSS" ></label>
+      <label>JavaScript<input type="checkbox" name="issues[]" value="JavaScript" ></label>
+      <label>PHP<input type="checkbox" name="issues[]" value="PHP" ></label>
+      <label>MySQL<input type="checkbox" name="issues[]" value="MySQL" ></label>
+    </p>
+    <p>
+      <label>Description of Issue <br><textarea name="issueDescrpition" rows="5" cols="50" placeholder="Write description of your problem here..."></textarea></label>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Preferred Date/Time</legend>
+    <p><label>Date<input type="text" name="date" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}"></label></p>
+    <p><label>Time<input type="text" name="time" placeholder="00:00" pattern="\d{2}:\d{2}"></label></p>
+  </fieldset>
+	<input type= "submit" value="Book"/>
+	<input type= "reset" value="Reset Form"/>
+</form>
+</body>
+</html>

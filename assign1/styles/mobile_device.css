@@ -1,0 +1,238 @@
+/*
+filename:
+sergio omar alvarado perez
+author:
+sergio omar alvarado perez
+created:
+4/2/2020
+last modified:
+4/3/2020
+description:
+mobile-size styling for index.html product.html enhancements.html enquire.html about.html
+*/
+* {font-family: "heroregular";
+color: white;}
+aside {
+  background-color: #444;
+  color: white;
+  text-align: center;
+ }
+article h1 {color: white;}
+nav a {
+  text-decoration: none;
+  border: 4px solid #222;
+  color: white;
+  background-color: #222;
+  width: 100%;
+  display: block;
+  min-width: 150px
+}
+nav p{
+  width: 100%;
+  text-align: center;
+  display: inline;
+}
+nav a:hover {
+  background-color: #333;
+  font-size: 1.6em;
+}
+nav{
+  text-align: center;
+}
+#profile{
+  float: left;
+  width: 50%;
+}
+#country{
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.img1{
+  width: 100%;
+  max-width: 1200px;
+}
+.bold{
+  font-family: "herobold";
+  font-size: 1.7em;
+}
+.italic{
+  font-size: 1.7em;
+  font-style: italic;
+}
+article, section{
+  text-align: center;
+  background-color: #000;
+}
+
+
+
+footer{
+  background-color: #222;
+  clear: both;
+  color: white;
+  overflow: auto;
+}
+#leftfoot{
+  float: left;
+  width: 50%;
+}
+#rightfoot{
+  float: right;
+  text-align: right;
+  width: 50%;
+
+}
+#rightfoot a{
+    color: lightgray;
+    font-size: 1.5em;
+}
+#rightfoot img{
+  width: auto;
+  height: 30px;
+  vertical-align: baseline;
+}
+.span1{
+  text-align: left;
+  color: white;
+}
+.img2{
+  object-fit: contain;
+  width: 50%;
+}
+.span2{
+  text-align: left;
+  color: white;
+  clear: both;
+}
+.asidediv{
+  width: 50%;
+  display: inline;
+  float: left;
+}
+.prodmenu  {
+  text-decoration: none;
+  border: 4px solid white;
+  color: white;
+  background-color: #000;
+  width: 100%;
+  display: inline-block;
+}
+section p{
+  width: 19%;
+  text-align: center;
+  display: inline-block;
+}
+.prodmenu :hover {
+  background-color: white;
+  color: black;
+  border-color: #222;
+  font-size: 1em;
+}
+section .span1{
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+.img3{
+  object-fit: contain;
+  width: 100%
+}
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+.span3{
+  width: 70%;
+  text-align: center;
+  display: inline-block;
+}
+.right{
+  font-size: 3em;
+  padding-bottom: 20px;
+  background-color: #222;
+  margin-bottom: 0px;
+}
+.button{
+  border-radius: 8px;
+  background-color: White;
+  font-size: .7em;
+  padding: 5px 10px;
+  font-family: "herobold";
+}
+.comment{
+  text-align: center;
+  width: 100%;
+}
+/*background img*/
+#bckg{
+  background-image: url("img/back.png");
+  background-repeat: repeat;
+  background-size: 100px 100px;
+}
+input, select, textarea{
+  color: black;
+}
+/*fullpage article design*/
+.fullpage{
+  text-align: center;
+  width: 100%;
+  background-color: #444;
+  clear: both;
+}
+/* styling about article*/
+.fullpage dl {
+  border: 3px double #ccc;
+  padding: 0.5em;
+  width: 100%;
+  float: left;
+}
+.fullpage dt {
+  clear: left;
+	float: left;
+  width: 40%;
+	text-align: right;
+  font-family: "herobold";
+  color: black;
+}
+.fullpage dt::after {
+  content: " :";
+}
+.fullpage dd {
+  width: 40%;
+	margin-left: 42%;
+  text-align: left;
+}
+/*styling profile image*/
+.fullpage figure{
+  width: 100%;
+  float: right;
+  margin: 0px;
+}
+.fullpage figure img{
+  border: 3px double #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+.fullpage table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .8em;
+}
+.fullpage th{
+  empty-cells: hide;
+  font-family: herobold;
+  background-color: #222;
+}
+.fullpage td{
+  background-color: #eee;
+  color: black;
+}
+/*Form input validation*/
+input:valid{
+  background-color: #AFA;
+}
+input:invalid{
+  background-color: #FAA;
+}

@@ -1,0 +1,314 @@
+/*
+filename:
+sergio omar alvarado perez
+author:
+sergio omar alvarado perez
+created:
+4/2/2020
+last modified:
+4/3/2020
+description:
+stylesheet for the following pages, index.html product.html enhancements.html enquire.html about.html
+*/
+* {
+  font-family: "heroregular";
+  color: white;
+}
+h1{
+  font:1.7em "herobold", sans-serif;
+}
+header{
+  position: absolute;
+  z-index: -1;
+}
+nav{
+  min-width: 700px;
+  text-align: center;
+}
+article{
+  text-align: center;
+  width: 73%;
+  float: left;
+  background-color: #000;
+  margin-bottom: 100px;
+}
+aside{
+  float: right;
+  width: 25%;
+  text-align: center;
+  border: 4px inset #AAA;
+  border-radius: 14px;
+  background-color: #444;
+  color: white;
+}
+footer{
+  background-color: #222;
+  clear: both;
+  color: white;
+  overflow: auto;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  margin-left: -.5%;
+}
+/*nav menu*/
+nav a {
+  text-decoration: none;
+  border: 4px solid #222;
+  color: white;
+  background-color: #222;
+  width: 100%;
+  display: inline-block;
+}
+nav p{
+  width: 19%;
+  text-align: center;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #333;
+  padding:40px 0px 40px 0px;
+  font-size: 1.5em;
+  margin-bottom:-4px;
+  vertical-align: bottom;
+}
+/*Product menu*/
+.prodmenu {
+  text-decoration: none;
+  border: 4px solid white;
+  color: white;
+  background-color: #000;
+  width: 100%;
+  display: inline-block;
+}
+section p{
+  width: 19%;
+  text-align: center;
+  display: inline-block;
+}
+.prodmenu:hover {
+  background-color: white;
+  color: black;
+  border-color: #222;
+  font-size: 1em;
+}
+section .span1{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/*table design*/
+table{
+  border-collapse: collapse;
+}
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
+table th{
+  background-color: darkgray;
+}
+table td{
+  background-color: White;
+  color: Black;
+}
+/*images and special typography classes*/
+.img1{
+  width: 100%;
+  max-width: 1200px;
+}
+.img2{
+  object-fit: contain;
+  width: 50%;
+}
+.img3{
+  object-fit: contain;
+  width: 100%
+}
+.bold{
+  font-family: "herobold";
+  font-size: 1.7em;
+}
+.italic{
+  font-size: 1.7em;
+  font-style: italic;
+}
+.span1{
+  text-align: left;
+  color: white;
+}
+.span2{
+  text-align: left;
+  color: white;
+  clear: both;
+}
+.span3{
+  width: 70%;
+  text-align: center;
+  display: inline-block;
+}
+.right{
+  text-align: right;
+  font-size: 3em;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  background-color: #222;
+  margin-bottom: 0px;
+  clear: both;
+}
+.button{
+  border-radius: 8px;
+  background-color: White;
+  font-size: .7em;
+  padding: 5px 10px;
+  font-family: "herobold";
+}
+.comment{
+  text-align: center;
+  width: 100%;
+}
+.personaldata h4{
+  text-align: center;
+  width: 50%;
+  float: right;
+  display: block;
+  font-family: "herobold";
+  font-size: 1.5em;
+  color: black;
+}
+.data{
+  color: White;
+  font-style: italic;
+  font-size: .7em;
+}
+/*disable form values*/
+.disable{
+pointer-events:none;
+background:grey;
+}
+/*Header*/
+#profile{
+  float: left;
+  width: 50%;
+}
+#country{
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+/*nav middle design*/
+#index{
+  vertical-align: bottom;
+  padding:40px 0px 40px 0px;
+  margin-bottom:-4px;
+  font-size: 1.5em;
+}
+/*footer design*/
+#leftfoot{
+  float: left;
+  width: 40%;
+}
+#rightfoot{
+  float: right;
+  text-align: center;
+  width: 40%;
+}
+#rightfoot a{
+    color: lightgray;
+    font-size: 1.5em;
+}
+#rightfoot img{
+  width: auto;
+  height: 30px;
+  vertical-align: baseline;
+}
+#middlefoot{
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+/*background img*/
+#bckg{
+  background-image: url("img/back.png");
+  background-repeat: repeat;
+  background-size: 100px 100px;
+}
+/*cancel form button*/
+#cancelbutton{
+  border-radius: 8px;
+  background-color: White;
+  color: black;
+  font-size: .5em;
+  padding: 5px 10px;
+  font-family: "herobold";
+}
+/*styling form*/
+input, select, textarea{
+  color: black;
+}
+fieldset{
+  max-width: 800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/*fullpage article design*/
+.fullpage{
+  text-align: center;
+  width: 100%;
+  background-color: #666;
+  clear: both;
+}
+/* styling about article*/
+.fullpage dl {
+  border: 3px double #ccc;
+  padding: 0.5em;
+  width: 65%;
+  float: left;
+}
+.fullpage dt {
+  clear: left;
+	float: left;
+  width: 40%;
+	text-align: right;
+  font-family: "herobold";
+  color: black;
+}
+.fullpage dt::after {
+  content: " :";
+}
+.fullpage dd {
+  width: 40%;
+	margin-left: 42%;
+  text-align: left;
+}
+/*styling of about.html figure image*/
+.fullpage figure{
+  width: 30%;
+  float: right;
+  margin: 0px;
+}
+.fullpage figure img{
+  border: 3px double #ccc;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+}
+.fullpage table{
+  margin-left:auto;
+  margin-right:auto;
+}
+.fullpage th{
+  padding: .2em;
+  font-family: herobold;
+  background-color: #222;
+}
+.fullpage td{
+  background-color: #eee;
+}
+/*Form input validation*/
+input:valid{
+  background-color: #AFA;
+}
+input:invalid{
+  background-color: #FAA;
+}
